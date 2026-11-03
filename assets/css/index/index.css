@@ -1,0 +1,603 @@
+/* ======================= header ======================= */
+.main-header{
+    width: 100%;
+    height: min-content;
+    text-align: center;
+    padding: 20px 10%;    
+    >.content{
+
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+
+
+        /* div 1 */
+    >.d1{
+        width: 50%;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
+        /* logo */
+        >img{
+            width: 130px;
+        }
+
+        >.searchdiv{
+            width: 500px;
+            height: 50px;
+            outline: none;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #f3f3f3;
+
+
+            >input{
+                padding: 1px 20px;
+                width: 100%;
+                height: 100%;
+                outline: none;
+                border: none;
+                &::placeholder{
+                    font-family: "iransans";
+                    
+                }
+            }
+
+            >i{
+                position: absolute;
+                left: 7px;
+                background-color: var(--p-text);
+                padding: 7px 7px;
+                color: white;
+                border-radius: 10px;
+            }
+
+        }
+
+
+
+    }
+
+    /* d2 */
+    >.d2{
+        width: 50%;
+        display: flex;
+        gap: 18px;
+        justify-content: end;
+        align-items: center;
+
+        >a{
+            border: 1px solid #e0e0e0;
+            border-radius: 13px;
+            padding: 7px 15px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            
+            >i{
+                font-size: 18px;
+                
+            }
+
+            &:nth-of-type(1){
+                border: none;
+               >i{
+                color: var(--main-purple);
+               }
+            }
+            
+        }
+
+    }
+
+    }
+
+    
+
+    /* div3 */
+    >.div3{
+        margin-top: 20px;
+        width: 100%;
+        border-top: 1px solid #dededec7;
+        padding: 13px 12px;
+        display: flex;
+        
+        >ul{
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            >li{
+                font-weight: 500;
+                font-size: 14px;
+                color: var(--icon-menu);
+            }
+        }
+    }
+
+
+}
+
+/* ======================= navbar ======================= */
+
+
+   .navbar{
+        display: none;
+    }
+
+
+
+/* ======================= banner ======================= */
+.main-banner{
+    width: 80%;
+    margin: 4px auto;
+    height: 500px;
+
+    >img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 13px;
+        object-position: 34%;
+        
+    }
+}
+
+/* ======================= categort ======================= */
+.maincat{
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: repeat(2 , fr);
+    row-gap: 40px;
+    
+    align-items: center;
+
+    
+    >.wrapper{
+        text-align: center;
+        /* imagae */
+        >img{
+            max-width: 80px;
+        }
+        /* title */
+        >h3{
+            margin-top: 12px;
+            font-size: 11px;
+            color: #484848;
+        }
+    }
+}
+
+
+/* ======================= products ======================= */
+.main-product{
+    
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 100px;
+
+
+    /* title */
+    >.title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        
+
+        /* h4 */
+        >h4{
+            font-size: 25px;
+            &::before{
+                content: "";
+                background-color: #5532e9;
+                width: 4px;
+                height: 100%;
+                position: absolute;
+                right: -13px;
+            }
+        }
+
+        /* icons */
+        >div{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            display: none;
+            >i{
+                font-size: 25px;
+                cursor: pointer;
+                
+            }
+        }
+    }
+
+    /* wrapper */
+    >.product-wrapper{
+        margin-top: 40px;
+    display: grid;
+    grid-template-columns:  20% 20% 20% 20% 20%;
+    gap: 30px;
+    max-width: 100%;
+
+        
+            /* banner */
+            >.ban{
+                background-color: #5532e9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 10px;
+                *{
+                    color: white;
+                }
+                >i{
+                    font-size: 70px;
+                }
+
+                >a{
+                    font-size: 15px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+
+        /* card */
+
+        >div{
+            background-color: rgb(255, 255, 255);
+            /* width: 20%; */
+            padding: 30px 20px;
+            border-radius: 13px;
+            display: flex;flex-direction: column;gap: 20px;
+            justify-content: first baseline;
+            border: 1px solid rgba(255, 0, 0, 0.175);
+            img , h3 , button{
+                cursor: pointer;
+            }
+            /* image */
+            >img{
+                width: 100%;
+                min-height: 170px;
+                max-height: 170px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 7px;
+                
+            }
+
+            /* title */
+            >h3{
+                font-size: 16px;
+                color: #1b1b1b;
+                /* min-height: 35px;
+                background-color: red; */
+            }
+
+            /* price */
+            >p{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                font-size: 18px;
+                justify-content: end;
+                font-weight: 600;
+                /* min-height: 30px;
+                background-color: red; */
+            }
+
+            /* add to cart */
+            >form>button{
+                background-color: #5532e9;
+                color: white;
+                display: flex;
+                gap: 12px;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 45px;
+                border-radius: 15px;
+                outline: none; border: none;
+                font-family: "iransans";
+                margin-top: auto;
+            }
+
+        }
+
+    }
+
+
+
+}
+
+
+
+
+    /* ======================= banner ======================= */
+    .banwrapper{
+        display: flex;
+        width: 80%;
+        margin: 4rem auto;
+        gap: 15px;
+        
+
+        >img{
+            width: 100%;
+            max-height: 120px;
+            object-fit: cover;
+            border-radius: 7px;
+            object-position: center;
+        }
+
+        >.two{
+            width: 50%;
+            min-height: 230px;
+        }
+    }
+
+
+    /* ======================= footer ======================= */
+    .main-footer{
+       margin: 100px 0;
+        width: 100%;
+        padding: 20px 10%;
+        border-top: 1px solid rgb(217, 217, 217);
+
+        >.dv1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            >P{
+                color: #6e6e6e;
+            }
+
+            >a{
+                width: fit-content;
+                border-radius: 14px;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                align-items: center;
+                border: 1px solid #6e6e6e;
+                font-size: 12px;
+            }
+
+            &:nth-of-type(2){
+                justify-content: center;
+                margin-top: 30px;
+                flex-direction: column;
+                gap: 20px;
+
+                >div>a>img{
+                    max-width:70px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+/* ======================= user ======================= */
+.user{
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+
+    >h3{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    >a{
+        width: fit-content;
+        padding: 10px 20px;
+        color: white;
+        background-color: #5532e9;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ======================= responsive ======================= */
+ @media screen and (max-width: 420px){
+    
+   
+    /* ======================= header ======================= */
+
+    .main-header{
+        width: 100%;
+        padding: 12px 20px;
+        position: relative;
+        overflow: hidden;
+        
+        >.content{
+            width: 100%;
+
+             /* d1 */
+        >.d1{
+
+            width: 100%;
+            gap: 13px;
+            >img{
+                width: 110px;
+            }
+        }
+
+        /* d2 */
+        >.d2{
+            display: none;
+        }
+
+        }
+
+        /* d3 */
+        >.div3{
+            padding: 10px 5px;
+            justify-content: center;
+            width: 100%;
+            >ul{
+                width: 100%;
+                justify-content: space-between;
+                /* gap: 20px; */
+                >li{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    /* ======================= nsvbar ======================= */
+
+    .navbar{
+        display: block;
+    }
+
+    /* ======================= banner ======================= */
+    .main-banner{
+        width: 100%;
+        padding: 5px 20px;
+        height: fit-content;
+        >img{
+            width: 100%;
+            height: 250px;
+        }
+    }
+
+    /* ======================= category ======================= */
+    .maincat{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        overflow: auto;
+        gap: 30px;
+        padding: 1px 20px;
+
+        >.wrapper{
+            
+            >img{
+                width: 120px;
+            }
+
+            >h3{
+                margin-top: 7px;
+                font-size: 10px;
+            }
+
+        }
+    }
+
+
+    /* ======================= products ======================= */
+    .main-product{
+        padding: 5px 20px;
+        margin-top: 60px;
+        width: 100%;
+        /* title */
+        >.title{
+            align-items: center;
+            width: 100%;
+            >h4{
+                font-size: 18px;
+            }
+
+            /* icons */
+            >div{
+                display: block;
+            }
+        }
+
+
+        >.product-wrapper{
+            overflow: auto;
+            width: 100%;
+            display: flex;
+            gap: 15px;
+
+            /* banner */
+            >.ban{
+                width: 120px;
+                >a{
+                    font-size: 13px;
+                }
+            }
+
+            >div{
+                width: 60%;
+                flex-shrink: 0;
+
+                >img{
+                    width: 100%;
+                max-height: 170px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 7px;
+                }
+            }
+        }
+
+        
+
+    }
+
+    /* ======================= banner ======================= */
+    .banwrapper {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 50px auto ;
+
+    >img{
+        width: 100%;
+        max-height: 200px;
+    }
+
+    >.two{
+        width: 100%;
+        min-height: 200px;
+        max-height: 250px;
+    }
+}
+
+    /* ======================= footer ======================= */
+    .main-footer{
+            width: 100%;
+
+            >.dv1{
+                flex-direction: column;
+                gap: 20px;
+            }
+    }
+
+
+ }
+
+
+ @media screen and (max-width:377px){
+    .main-header{
+        >.div3{
+            display: none;
+        }
+    }
+ }

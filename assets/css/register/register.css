@@ -1,0 +1,118 @@
+/* ======================= main ======================= */
+
+.main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* content */
+    >.content{
+        padding: 10px 20px 20px 20px;
+        width: 400px;
+        min-height: 400px;
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* logo */
+
+        >a>img{
+        
+         width: 110px;
+         margin-block: 15px;
+        }
+
+        /* title */
+        >h3{
+            margin-top: 10px;
+            font-size: 18px;
+            >.al{
+                color: var(--p-text);
+            }
+        }
+
+        >p{
+            margin-top: 10px;
+            font-size: 13px;
+            color: var(--g-text);
+        }
+
+        >form{
+            margin-top: 25px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .inp{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                >label{
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+
+                >.inps{
+
+                height: 50px;
+                border: 1px solid #f0f0f0;
+                border-radius: 16px;
+                overflow: hidden;
+                >input{
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    padding: 10px 20px;
+                    &::placeholder{
+                        font-family: "iransans";
+                        
+                    }
+                }
+
+                    
+
+                }
+
+            }
+
+            /* button */
+
+            >button{
+                width: 100%;
+                
+                border-radius: 14px;
+                background-color: var(--p-text);
+                color: white;
+                outline: none;
+                border: none;
+                font-family: "iransans";
+                font-weight: 600;
+                padding: 13px 10px;cursor: pointer;
+                transition: 0.3s;
+                &:hover{
+                    background-color: transparent;
+                    border: 1.7px solid var(--p-text);
+                    color: var(--p-text);
+                }
+            }
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width:420px){
+    .main{
+        width: 95%;
+        border: 1px solid #f9f9f9;
+        margin: 0 auto;
+    }
+}
